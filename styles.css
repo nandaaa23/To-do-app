@@ -1,0 +1,89 @@
+body {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  max-width: 600px;
+  height: 600px;
+  width: 100%;
+}
+
+#wrapper {  
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+#tasks {
+  margin-top: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+
+.title-bar {
+  font-size: 1.4rem; 
+  height: 30px; 
+  padding: 6px 12px;
+}
+
+.title-bar-text {
+  line-height: 28px;
+}
+
+.window-body {
+  font-size: 1.2rem;
+}
+
+.button {
+  font-size: 1.1rem;
+  padding: 10px 18px;
+}
+
+.field {
+  font-size: 1.7rem;
+  padding: 16px 18px;
+  min-height: 50px;
+}
+
+@media (max-width: 480px) {
+  #wrapper {
+    flex-direction: column; 
+  }
+
+  .field {
+    width: 100%;          
+    font-size: 1.4rem;      
+    padding: 14px;         
+    min-height: 45px;
+  }
+
+  .button {
+    width: 100%;           
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .taskname {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+}
